@@ -1,0 +1,94 @@
+.aboutus__container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.aboutus__container__heading {
+    text-align:  center;
+    width: 80%;
+    margin-bottom: 6rem;
+}
+
+.aboutus__container__heading h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.aboutus__container__images h3{
+    font-size: 3rem;
+}
+
+.aboutus__container__images {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-splide {
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.splide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1500px) {
+    .aboutus__container__heading h1{
+        font-size: 4rem;
+    }
+
+    .aboutus__container__images h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutus__container__heading h1{
+        font-size: 3.5rem;
+    }
+
+    .aboutus__container__images h3 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutus__container__heading {
+        margin-bottom: 3rem;
+    }
+
+    .aboutus__container__heading h1{
+        font-size: 3rem;
+    }
+
+    .aboutus__container__heading p {
+        font-size: 0.8rem;
+    }
+
+    .aboutus__container__images h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutus__container__heading {
+        margin-bottom: 3rem;
+    }
+
+    .aboutus__container__heading h1{
+        font-size: 2.5rem;
+    }
+
+    .aboutus__container__heading p {
+        font-size: 0.8rem;
+    }
+
+    .aboutus__container__images h3 {
+        font-size: 1.5rem;
+    }
+}

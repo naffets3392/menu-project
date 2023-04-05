@@ -1,0 +1,147 @@
+.home__container {
+    display: flex;
+}
+
+.home__container__heading {
+    flex: 1;
+}
+
+.home__container__heading h1 {
+    font-size: 5rem;
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+
+.home__container__heading p {
+    font-size: 1rem;
+}
+
+.home__container__images {
+    margin-left: 10rem;
+    display: flex;
+}
+
+.home__container__images__flex {
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+}
+
+.home__container__images__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 2rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 1500px) {
+    .home__container__heading h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .home__container__heading p {
+        font-size: 1rem;
+    }
+
+    .home__container__images {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home__container__heading {
+        margin-bottom: 3rem;
+        flex: 1;
+    }
+
+    .home__container__images {
+        margin: 0px;
+    }
+
+    .home__container__images__grid {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .home__container__heading {
+        margin-bottom: 3rem;
+        flex: 1;
+    }
+
+    .home__container__heading h1 {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    .home__container__heading p {
+        font-size: 0.8rem;
+    }
+    .home__container__images {
+        flex: 3;
+    }
+
+    .home__container__images__grid {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .home__container__heading {
+        margin-bottom: 3rem;
+        flex: 1;
+    }
+
+    .home__container__heading h1 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    .home__container__heading p {
+        font-size: 0.7rem;
+    }
+
+    .home__container__images {
+        flex-direction: column;
+    }
+
+    .home__container__images__grid {
+        margin: 0px;
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home__container__heading {
+        margin-bottom: 2rem;
+    }
+
+    .home__container__heading h1 {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .home__container__heading p {
+        font-size: 0.5rem;
+    }
+
+    .home__container__images__grid {
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+    }
+
+    .home__container__images__grid div {
+        height: 20vh;
+    }
+}
+
+
+

@@ -1,0 +1,96 @@
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+.contact__container__heading {
+    text-align:  center;
+    width: 80%;
+    margin-bottom: 6rem;
+}
+
+.contact__container__heading h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact__container__map {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contact__container__phone {
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1500px) {
+    .contact__container__heading h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact__container__heading h1{
+        font-size: 3.5rem;
+    }
+
+    .contact__container__heading p{
+        font-size: 1rem;
+    }
+
+
+    .aboutus__container__images p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .contact__container__heading h1{
+        font-size: 3.5rem;
+    }
+
+    .contact__container__heading p{
+        font-size: 1rem;
+    }
+
+
+    .aboutus__container__images p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact__container__heading h1{
+        font-size: 3.5rem;
+    }
+
+    .contact__container__heading p{
+        font-size: 0.8rem;
+    }
+
+    .contact__container h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact__container__heading h1{
+        font-size: 3rem;
+    }
+
+    .contact__container__heading p{
+        font-size: 0.6rem;
+    }
+
+    .contact__container h3 {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+

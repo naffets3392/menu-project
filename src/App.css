@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+  color: red;
+}
+
+body {
+  background-color: black;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.padding-page {
+  padding: 2rem;
+}
