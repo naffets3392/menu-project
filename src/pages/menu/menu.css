@@ -1,3 +1,4 @@
+
 .menu__container__heading-container {
     display: flex;
     flex-direction: column;
@@ -13,8 +14,16 @@
 
 .menu__container__heading-container__buttons {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(15,1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.menu__container__heading-container__heading p {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 2rem;
 }
 
 .menu__container__heading-container__heading h1 {
@@ -32,13 +41,13 @@
     gap: 3rem;
 }
 
-.activeButton {
+.menu__container__heading-container__buttons .activeButton {
     background-color: rgb(219, 12, 219);
   }
 
 .menu__container__heading-container__buttons button {
     margin: 0rem 0.5rem;
-    padding: 1rem;
+    padding: 0.3rem;
     background-color: red;
     color: black;
     font-size: 1rem;
@@ -50,6 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -182,6 +192,9 @@
 }
 
 @media screen and (max-width: 550px) {
+    body {
+        position: relative;
+    }
     .menu__container__heading-container {
         margin-bottom: 2rem;
     }

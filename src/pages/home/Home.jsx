@@ -1,5 +1,4 @@
 import React from "react";
-import './home.css'
 import img2 from '../../menuprojectimages/menuprojectimage2.jpg'
 import img3 from '../../menuprojectimages/menuprojectimage3.jpg'
 import img4 from '../../menuprojectimages/menuprojectimage4.jpg'
@@ -7,7 +6,7 @@ import img4 from '../../menuprojectimages/menuprojectimage4.jpg'
 export default function Home() {
     return (
         <div className="home__container padding-page">
-            <div className="home__container__heading">
+            <div className="home__container__heading heading">
                 <h1>Welcome to Our restaurant</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime ad tempore pariatur reiciendis iste amet.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur reprehenderit tempora architecto ab officiis sint commodi totam nostrum optio molestiae.</p>
@@ -19,8 +18,8 @@ export default function Home() {
                     <img src={img2} alt="" />
                 </div>
                 <div className="home__container__images__grid">
-                        <div><img src={img3} alt="" /></div>
-                        <div><img src={img4} alt="" /></div>
+                    <div><img src={img3} alt="" /></div>
+                    <div><img src={img4} alt="" /></div>
                 </div>
             </div>
         </div>

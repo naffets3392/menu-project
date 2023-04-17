@@ -10,6 +10,11 @@
     margin-bottom: 6rem;
 }
 
+.aboutus__container__heading p {
+    width: 60%;
+    margin: 0px auto;
+    font-size: 2rem;
+}
 .aboutus__container__heading h1 {
     font-size: 5rem;
     margin-bottom: 0.5rem;

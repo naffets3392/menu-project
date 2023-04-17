@@ -44,21 +44,25 @@ export default function MenuItem({meal,menuItems}) {
 
     if(showMore) {
         return (
-            <div className="menuItem__container info">
-                <div className="menuItem__container__buttons-container">
-                    <h1>{name}</h1>
-                    <div className="menuItem__container__buttons-container__buttons">
-                        <button className={insOrIng === 'instructions' ? 'activeButton' : ''} onClick={() => setInsOrIng('instructions')}>instructions</button>
-                        <button className={insOrIng === 'ingredients' ? 'activeButton' : ''} onClick={() => setInsOrIng('ingredients')}>ingredients</button>
+            <div className="info">
+                <div className="info__content-container">
+                    <h3>{name}</h3>
+                    <div className="info__buttonsAll-container">
+                        <div className="menuItem__container__buttons-container__buttons">
+                            <button className={insOrIng === 'instructions' ? 'active-menuItem-button' : ''} onClick={() => setInsOrIng('instructions')}>instructions</button>
+                            <button className={insOrIng === 'ingredients' ? 'active-menuItem-button' : ''} onClick={() => setInsOrIng('ingredients')}>ingredients</button>
+                        </div>
+                        <button onClick={() => setShowMore(false)} className="back-button">Back</button>
                     </div>
-                    <button onClick={() => setShowMore(false)} className="back-button">Back</button>
                 </div>
-                {insOrIng === 'instructions' && <p>{instructions}</p>}
-                {insOrIng === 'ingredients' && <ul>{ingredients.map(item => {
-                    if(item) {
-                        return <li>{item}</li>
-                    }
-                })}</ul>}
+                <div className="info__container__text">
+                    {insOrIng === 'instructions' && <p>{instructions}</p>}
+                    {insOrIng === 'ingredients' && <ul>{ingredients.map(item => {
+                        if(item) {
+                            return <li>{item}</li>
+                        }
+                    })}</ul>}
+                </div>
             </div>
         )
     }

@@ -1,285 +1,171 @@
-.menuItem__container{
-    border: 1px solid red;
-    border-radius: 1rem;
-    overflow: hidden;
-    height: 600px;
-    position: relative;
+.menuItem__container {
+    border: 3px solid red;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 500px;
+    width: 400px;
+}
+
+.menuItem__container__image {
+    width: 100%;
+    height: 65%;
+}
+
+.menuItem__container__image img {
+    border-radius: 0.5rem;
 }
 
 .menuItem__container__content {
-    padding: 1rem;
-    position: absolute;
-    bottom: 0.5rem;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
     width: 100%;
 }
 
-.menuItem__container__content h3 {
+.menuItem__container__content h3{
     font-size: 2rem;
 }
 
 .menuItem__container__content__buttons {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content:  space-between;
-    margin-top: 1rem;
+    justify-content: space-between;
 }
 
 .menuItem__container__content__buttons button {
-    padding: 0.5rem;
     background-color: red;
     color: black;
-    cursor: pointer;
-    border-radius: 0.5rem;
     border: none;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
+
 
 .menuItem__container__content__buttons button:hover {
-    background-color: rgb(219, 12, 219);
+    background-color: rgb(226, 18, 226);
 }
 
-.menuItem__container__content .star-icon {
+.star-icon {
     font-size: 2rem;
     cursor: pointer;
 }
 
+/* INFO SIDE ************************************************************/
+
 .info {
-    padding: 1.5rem;
+    height: 500px;
+    width: 400px;
+    border: 3px solid red;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.menuItem__container__buttons-container {
+.info h3 {
+    font-size: 2rem;
+}
+
+.info__content-container {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info__buttonsAll-container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
 }
 
-.menuItem__container__buttons-container button{
-    margin-left: 10px;
+.info__buttonsAll-container button {
+    font-size: 1.3rem;
     padding: 0.3rem;
     background-color: red;
     color: black;
-    border-radius: 0.5rem;
-}
-
-.menuItem__container__buttons-container button:hover{
-    background-color: rgb(219, 12, 219);
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
-ul {
-    margin-left: 1rem;
+.menuItem__container__buttons-container__buttons {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.menuItem__container__buttons-container .activeButton {
-    background-color: rgb(219, 12, 219);
+ul li {
+    margin-left: 1.3rem;
+    font-size: 1.3rem;
 }
 
-.menuItem__container__image {
-    height: 75%;
+p {
+    font-size: 1.3rem;
 }
 
-@media screen and (max-width: 1650px) {
-    .menuItem__container{
-        height: 450px;
-    }
-
-    .menuItem__container__image {
-        height: 65%;
-    }
+.info__buttonsAll-container button:hover {
+    background-color:  rgb(226, 18, 226);
 }
 
-@media screen and (max-width: 1450px) {
-    .menuItem__container{
+.info__container__text {
+    height: 80%;
+    margin-top: 1.5rem;
+}
+
+.active-menuItem-button {
+    background-color: rgb(226, 18, 226) !important;
+}
+
+/* RESPONSIVE ****************************************************************/
+
+@media screen and (max-width: 650px) {
+    .menuItem__container, .info {
+        width: 350px;
         height: 400px;
     }
 
-    .menuItem__container__image {
-        height: 65%;
+    .menuItem__container h3, .info h3 {
+        font-size: 1.7rem;
     }
 
-    .menuItem__container__content {
-        padding: 1rem;
+    .menuItem__container__content__buttons button {
+        font-size: 1.1rem;
     }
 
-    .menuItem__container__content h3 {
-        font-size: 1.8rem;
+    .star-icon {
+        font-size: 1.7rem;
     }
 
-    .menuItem__container__content__buttons button  {
-        padding: 0.4rem;
-        border-radius: 0.4rem;
+    /* info  ******************************************************************/
+
+    .info__buttonsAll-container button {
+        font-size: 1rem;
     }
 
-    .menuItem__container__content__buttons .star-icon {
-        font-size: 1.8rem;
-    }
-}
-
-@media screen and (max-width: 1250px) {
-    .menuItem__container{
-        height: 350px;
+    .menuItem__container__buttons-container__buttons {
+        width: 73%;
     }
 
-    .menuItem__container__image {
-        height: 65%;
+    p {
+        font-size: 1rem;
     }
 
-    .menuItem__container__content {
-        padding: 0.8rem;
-    }
-
-    .menuItem__container__content h3 {
-        font-size: 1.6rem;
-    }
-
-    .menuItem__container__content__buttons button  {
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-    }
-
-    .menuItem__container__content__buttons .star-icon {
-        font-size: 1.6rem;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .menuItem__container{
-        height: 330px;
-    }
-
-    .menuItem__container__image {
-        height: 65%;
-    }
-
-    .menuItem__container__content {
-        padding: 0.7rem;
-    }
-
-    .menuItem__container__content h3 {
-        font-size: 1.4rem;
-    }
-
-    .menuItem__container__content__buttons button  {
-        padding: 0.2rem;
-        border-radius: 0.3rem;
-    }
-
-    .menuItem__container__content__buttons .star-icon {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 750px) {
-    .menuItem__container{
-        height: 310px;
-    }
-
-    .menuItem__container__image {
-        height: 65%;
-    }
-
-    .menuItem__container__content {
-        padding: 0.5rem;
-    }
-
-    .menuItem__container__content h3 {
-        font-size: 1.2rem;
-    }
-
-    .menuItem__container__content__buttons button  {
-        padding: 0.2rem;
-        border-radius: 0.2rem;
-        font-size: 0.8rem;
-    }
-
-    .menuItem__container__content__buttons .star-icon {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 1700px) {
-    .menuItem__container__buttons-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .menuItem__container__buttons-container__buttons button{
-        margin: 0px;
-    }
-
-    .menuItem__container__buttons-container .back-button {
-        margin: 0px;
-    }
-}
-
-@media screen and (max-width: 1500px) {
-    .info {
-        padding: 1rem;
-    }
-
-    .menuItem__container__buttons-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .menuItem__container__buttons-container h1 {
-        font-size: 2rem;
-    }
-
-    .menuItem__container__buttons-container__buttons button{
-        margin: 0px;
-    }
-
-    .menuItem__container__buttons-container .back-button {
-        margin: 0px;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .info {
-        padding: 1rem;
-    }
-
-    .menuItem__container__buttons-container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .menuItem__container__buttons-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .menuItem__container__buttons-container__buttons button{
-        margin: 0px;
-        padding: 0.2rem;
-        font-size: 0.8rem;
-    }
-
-    .menuItem__container__buttons-container .back-button {
-        margin: 0px;
-        font-size: 0.8rem;
-        padding: 0.2rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .menuItem__container__buttons-container h1 {
-        font-size: 1.5rem;
-    }
-
-    .menuItem__container__buttons-container__buttons button{
-        margin: 0px;
-        padding: 0.2rem;
-        font-size: 0.8rem;
-    }
-
-    .menuItem__container__buttons-container .back-button {
-        margin: 0px;
-        font-size: 0.8rem;
+    ul li {
+        font-size: 1rem;
     }
 }

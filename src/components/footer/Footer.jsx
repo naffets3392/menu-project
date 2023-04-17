@@ -5,7 +5,7 @@ import {AiOutlineInstagram, AiOutlineFacebook, AiFillTwitterSquare} from 'react-
 export default function Footer() {
     return (
         <div className="footer__container">
-            <h1>Arc'style restaurant</h1>
+            <h3>Arc'style restaurant</h3>
             <div className="footer__container__links">
                 <AiOutlineInstagram className="footerIcon"/>
                 <AiOutlineFacebook className="footerIcon"/>

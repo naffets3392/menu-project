@@ -1,5 +1,4 @@
 import React from "react";
-import './favourites.css'
 import { useAppContext } from "../../AppContext";
 import MenuItem from "../../components/menuItem/MenuItem";
 
@@ -13,7 +12,7 @@ export default function Favourites() {
     console.log(menu)
     return (
         <div className="favourites__container padding-page">
-            <div className="favourites__container__heading">
+            <div className="favourites__container__heading heading">
                 <h1>Favourites</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aperiam dolorum exercitationem, neque dolore cumque quas ipsam esse molestias ratione?</p>
             </div>

@@ -15,6 +15,12 @@
     margin-bottom: 0.5rem;
 }
 
+.contact__container__heading p {
+    font-size: 2rem;
+    width: 60%;
+    margin: 0px auto;
+}
+
 .contact__container__map {
     width: 100%;
     margin-top: 3rem;
@@ -24,6 +30,12 @@
 .contact__container__phone {
     text-align: center;
     width: 100%;
+    font-size: 2rem;
+}
+
+.contact__container__map {
+    font-size: 2rem;
+    width: 60%;
 }
 
 @media screen and (max-width: 1500px) {

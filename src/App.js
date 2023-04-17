@@ -23,7 +23,7 @@ function App() {
           <Route path='/aboutus' element={<Aboutus />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
       </AppProvider>
     </Router>

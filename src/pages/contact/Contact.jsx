@@ -1,5 +1,4 @@
 import React from "react";
-import './contact.css'
 import { GoogleMap,useLoadScript, Marker } from "@react-google-maps/api";
 
 export default function Contact() {
@@ -7,7 +6,7 @@ export default function Contact() {
 
     return (
         <div className="contact__container padding-page">
-            <div className="contact__container__heading">
+            <div className="contact__container__heading heading">
                 <h1>Contact</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non est pariatur quasi, mollitia delectus optio a tempora sapiente odit? Perferendis, voluptate? Doloremque provident harum alias non eligendi libero ratione a ullam. Nisi enim dolorem, numquam doloremque sed quaerat amet, eveniet nulla odit fugiat illo eaque suscipit. Itaque illo ducimus rem!</p>
             </div>

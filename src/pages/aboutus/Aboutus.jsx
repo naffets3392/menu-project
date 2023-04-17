@@ -1,5 +1,4 @@
 import React from "react";
-import './aboutus.css'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import img5 from '../../menuprojectimages/menuprojectimage5.jpg'
@@ -14,7 +13,7 @@ export default function Aboutus() {
     console.log(images)
     return (
         <div className="aboutus__container padding-page">
-            <div className="aboutus__container__heading">
+            <div className="aboutus__container__heading heading">
                 <h1>About us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, beatae quibusdam perferendis molestiae veniam incidunt voluptas nostrum quae tempore a repellat cupiditate rerum exercitationem consectetur maiores adipisci, ex, necessitatibus ratione eos nemo quas delectus minima! Voluptate facere necessitatibus dolores eius sed perferendis. Necessitatibus ipsam atque excepturi eum quae aliquam consequatur?</p>
             </div>
